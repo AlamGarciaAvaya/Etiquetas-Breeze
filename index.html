@@ -1,144 +1,146 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
-  <link rel="icon" href="img/favicon.ico">
-  <title>Etiquetas</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Etiquetas</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-      </ul>
-      <button type="button" class="btn btn-secondary" id="ajustes-btn">Ajustes</button>
-    </div>
-  </nav>
-  <main role="main">
-    <div class="jumbotron text-center">
-      <div class="container">
-        <h3 class="display-4">Etiquetas</h3>
-        <div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Precio
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <form id="ajustes-frm" method="post">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp"  required>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!--[if IE]>
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <![endif]-->
+      <link rel="icon" href="img/favicon.ico">
+      <title>Etiquetas</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="#">Etiquetas</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <button type="button" class="btn btn-secondary" id="ajustes-btn">Ajustes</button>
+         </div>
+      </nav>
+      <main role="main">
+         <div class="jumbotron text-center">
+            <div class="container">
+               <h3 class="display-4">Etiquetas</h3>
+               <div id="accordion">
+                  <div class="card">
+                     <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Precio
+                           </button>
+                        </h5>
+                     </div>
+                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                           <form id="precio-frm" method="post">
+                              <div class="form-group">
+                                 <label for="exampleInputEmail1">Email</label>
+                                 <input type="tel" class="form-control" id="email-txt" name="email-txt" required>
+                              </div>
+                              <div class="form-group">
+                                 <label for="exampleInputEmail1">SMS</label>
+                                 <input type="text" class="form-control" id="sms-txt" name="sms-txt" required>
+                              </div>
+                              <div class="form-group">
+                                 <label for="exampleInputEmail1">Codigo del Producto</label>
+                                 <input type="tel" class="form-control" id="prod-txt" name="prod-txt" required>
+                              </div>
+                              <input type="submit" class="btn btn-primary" value="Enviar" ></button>
+                        </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Descripcion
+                           </button>
+                        </h5>
+                     </div>
+                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                           <form id="descr-frm" method="post">
+                              <div class="form-group">
+                                 <label for="exampleInputEmail1">Número</label>
+                                 <input type="tel" class="form-control" id="phone-txt" name="phone-txt" required>
+                              </div>
+                              <div class="form-group">
+                                 <label for="exampleInputEmail1">Producto</label>
+                                 <input type="text" class="form-control" id="prod-txt" name="prod-txt" required>
+                              </div>
+                              <input type="submit" class="btn btn-primary" value="Enviar" ></button>
+                        </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">SMS</label>
-              <input type="text" class="form-control" id="endpoint" name="endpoint" aria-describedby="emailHelp"  required>
+         </div>
+         </div>
+      </main>
+      <!-- Inicia Codigo para Modals -->
+      <!-- Modal para los settings-->
+      <div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form id="ajustes-frm" method="post">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">EndPoint</label>
+                        <input type="text" class="form-control" id="endpoint" name="endpoint" aria-describedby="emailHelp"  required>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Debug Mode</label>
+                           </div>
+                           <select class="custom-select"  name="debugmode" id="debugmode">
+                              <option value="0">No</option>
+                              <option value="1">Si</option>
+                           </select>
+                        </div>
+                     </div>
+               </div>
+               <div class="modal-footer">
+               <input type="submit" class="btn btn-primary" value="Guardar" ></button>
+               </form>
+               <button type="button" class="btn btn-secondary" id="limpiar-btn">Limpiar Ajustes</button>
+               </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Codigo del Producto</label>
-              <input type="tel" class="form-control" id="agente" name="agente" aria-describedby="emailHelp"  required>
-            </div>
-              <input type="submit" class="btn btn-primary" value="Guardar" ></button>
-        </div>
-
-          </form>
-
-
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Descripcion
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
       </div>
+      <!-- Fin Modal -->
+      <!-- Fin Codigo para Modals -->
+      <!-- Debugger -->
+      <div id="output" class="output">
+        <pre id="logger"></pre>
+        <div id="output" class="output">
+          <div id="content">
+        <div><span id="warning"></span></div>
+        </div>
+          <div id="status"></div>
+          <pre id="log"></pre>
+        </div>
     </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </main>
-
-
-
-
-  <!-- Inicia Codigo para Modals -->
-
-  <!-- Modal de Ajustes -->
-  <div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fin Modal -->
-
-  <!-- Modal de Información -->
-  <div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fin Modal -->
-
-  <!-- Fin Codigo para Modals -->
-
-  <footer class="container">
-
-    <p>&copy;Avaya 2018</p>
-
-  </footer>
-
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-</body>
-
+      <!-- Fin Debugger -->
+      <footer class="container">
+         <p>&copy;Avaya 2018</p>
+      </footer>
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+   </body>
 </html>
