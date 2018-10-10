@@ -7,6 +7,22 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css\intlTelInput.min.css">
       <style>
+      // workaround
+.intl-tel-input {
+  display: table-cell;
+}
+.intl-tel-input .selected-flag {
+  z-index: 4;
+}
+.intl-tel-input .country-list {
+  z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+}
       .iti-flag {background-image: url("img/flags.png");}
 
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -93,10 +109,7 @@
                                      <span id="valid-msg" class="hide">✓ Valido</span>
                                      <span id="error-msg" class="hide"></span>
                                  </div>
-                                 <div class="input-group mb-3">
 
-                                     <input type="text" class="form-control" id="intnumber-txt" name="intnumber-txt" hidden >
-                                   </div>
                               <div class="input-group mb-3">
                                   <div class="input-group-prepend">
                                     <label class="input-group-text" for="inputGroupSelect01">Producto</label>
@@ -131,10 +144,7 @@
                                      <span id="valid-msg2" class="hide">✓ Valido</span>
                                      <span id="error-msg2" class="hide"></span>
                                  </div>
-                                 <div class="input-group mb-3">
 
-                                     <input type="text" class="form-control" id="intnumber2-txt" name="intnumber2-txt" hidden >
-                                   </div>
                               <div class="input-group mb-3">
                                   <div class="input-group-prepend">
                                     <label class="input-group-text" for="inputGroupSelect01">Producto</label>
