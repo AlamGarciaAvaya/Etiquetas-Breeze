@@ -51,10 +51,16 @@
                                    pattern="^\+(?:[0-9]●?){6,14}[0-9]"
                                    required />
                               </div>
-                              <div class="form-group">
-                                 <label for="exampleInputEmail1">Codigo del Producto</label>
-                                 <input type="tel" class="form-control" id="prod-txt" name="prod-txt" required>
-                              </div>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Producto</label>
+                                  </div>
+                                  <select class="custom-select" id="product-txt">
+                                    <option value="1234567890">DESODORANTE REXONA MUJER</option>
+                                    <option value="A48695006">SALUFIT </option>
+                                    <option value="B35859045">1 LECHE SEMIDESCR-DESLACT</option>
+                                  </select>
+                                </div>
                               <input type="submit" class="btn btn-primary" value="Enviar" ></button>
                         </div>
                         </form>
