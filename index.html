@@ -97,14 +97,11 @@
 
                                      <input type="tel" class="form-control" id="intnumber-txt" name="intnumber-txt" hidden >
                                    </div>
-
-
                               <div class="input-group mb-3">
                                   <div class="input-group-prepend">
                                     <label class="input-group-text" for="inputGroupSelect01">Producto</label>
                                   </div>
                                   <select class="custom-select" id="product-txt" name="product-txt" required>
-
                                     <option value="1234567890">DESODORANTE REXONA MUJER</option>
                                     <option value="A48695006">SALUFIT </option>
                                     <option value="B35859045">1 LECHE SEMIDESCR-DESLACT</option>
@@ -126,15 +123,29 @@
                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                            <form id="descr-frm" method="post">
-                              <div class="form-group">
-                                 <label for="exampleInputEmail1">Número</label>
-                                 <input type="tel" class="form-control" id="phone-txt" name="phone-txt" required>
-                              </div>
-                              <div class="form-group">
-                                 <label for="exampleInputEmail1">Producto</label>
-                                 <input type="text" class="form-control" id="prod-txt" name="prod-txt" required>
-                              </div>
-                              <input type="submit" class="btn btn-primary" value="Enviar" ></button>
+                               <div class="input-group mb-3">
+                                   <div class="input-group-prepend">
+                                     <span class="input-group-text" id="basic-addon1">Telefono</span>
+                                   </div>
+                                   <input id="inputsms2-txt" type="tel" class="form-control">
+                                     <span id="valid-msg2" class="hide">✓ Valido</span>
+                                     <span id="error-msg2" class="hide"></span>
+                                 </div>
+                                 <div class="input-group mb-3">
+
+                                     <input type="tel" class="form-control" id="intnumber2-txt" name="intnumber2-txt" hidden >
+                                   </div>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Producto</label>
+                                  </div>
+                                  <select class="custom-select" id="product-txt" name="product-txt" required>
+                                    <option value="1234567890">DESODORANTE REXONA MUJER</option>
+                                    <option value="A48695006">SALUFIT </option>
+                                    <option value="B35859045">1 LECHE SEMIDESCR-DESLACT</option>
+                                  </select>
+                                </div>
+                              <input type="submit" class="btn btn-primary btn-lg btn-block" id="submit-frm2" value="Enviar" disabled></button>
                         </div>
                         </form>
                      </div>
@@ -161,17 +172,6 @@
                         <label for="exampleInputEmail1">EndPoint</label>
                         <input type="text" class="form-control" id="endpoint" name="endpoint" aria-describedby="emailHelp"  required>
                      </div>
-                     <!-- <div class="form-group">
-                        <div class="input-group mb-3">
-                           <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Debug Mode</label>
-                           </div>
-                           <select class="custom-select"  name="debugmode" id="debugmode">
-                              <option value="0">No</option>
-                              <option value="1">Si</option>
-                           </select>
-                        </div>
-                     </div> -->
                </div>
                <div class="modal-footer">
                <input type="submit" class="btn btn-primary" value="Guardar" ></button>
