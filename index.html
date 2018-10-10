@@ -1,216 +1,206 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="cache-control" content="no-cache" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/custom.css">
-      <link rel="stylesheet" type="text/css" href="css/intlTelInput.min.css">
-      <!--[if IE]>
-      <link rel="shortcut icon" href="img/favicon.ico">
-      <![endif]-->
-      <link rel="icon" href="img/favicon.ico">
-      <title>Etiquetas</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-         <a class="navbar-brand" href="#">Etiquetas</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <button type="button" class="btn btn-secondary" id="ajustes-btn">Ajustes</button>
-         </div>
-      </nav>
-      <main role="main">
-         <div class="jumbotron text-center">
-            <div class="container">
-              <div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/1.png" alt="Los Angeles">
-      </div>
-      <div class="carousel-item">
-        <img src="img/2.png" alt="Chicago">
-      </div>
-      <div class="carousel-item">
-        <img src="img/3.jpg" alt="New York">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-
-  </div>
-               <div id="accordion">
-                  <div class="card">
-                     <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                           Precio
-                           </button>
-                        </h5>
-                     </div>
-                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                           <form id="precio-frm" method="post">
-                             <div class="input-group mb-3">
-                                 <div class="input-group-prepend">
-                                   <span class="input-group-text" id="basic-addon1">Email</span>
-                                 </div>
-                                 <input type="email" class="form-control" id="email-txt" name="email-txt" value="jlramirez@avaya.com" aria-label="Username" aria-describedby="basic-addon1" required>
-                               </div>
-                               <div class="input-group mb-3">
-                                   <div class="input-group-prepend">
-                                     <span class="input-group-text" id="basic-addon1">Telefono</span>
-                                   </div>
-                                   <input id="inputsms-txt" type="tel" class="form-control">
-                                     <span id="valid-msg" class="hide">✓ Valido</span>
-                                     <span id="error-msg" class="hide"></span>
-                                 </div>
-
-                              <div class="input-group mb-3">
-                                  <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Producto</label>
-                                  </div>
-                                  <select class="custom-select" id="product-txt" name="product-txt" required>
-                                    <option value="1234567890">1234567890 - DESODORANTE REXONA MUJER</option>
-                                    <option value="A48695006">A48695006 - SALUFIT </option>
-                                    <option value="B35859045">B35859045 - 1 LECHE SEMIDESCR-DESLACT</option>
-                                  </select>
-                                </div>
-                              <input type="submit" class="btn btn-primary btn-lg btn-block" id="submit-frm1" value="Enviar" disabled></button>
-                        </div>
-                        </form>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           Descripcion
-                           </button>
-                        </h5>
-                     </div>
-                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                           <form id="descr-frm" method="post">
-                               <div class="input-group mb-3">
-                                   <div class="input-group-prepend">
-                                     <span class="input-group-text" id="basic-addon1">Telefono</span>
-                                   </div>
-                                   <input id="inputsms2-txt" type="tel" class="form-control">
-                                     <span id="valid-msg2" class="hide">✓ Valido</span>
-                                     <span id="error-msg2" class="hide"></span>
-                                 </div>
-
-                              <div class="input-group mb-3">
-                                  <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Producto</label>
-                                  </div>
-                                  <select class="custom-select" id="product-txt" name="product-txt" required>
-                                    <option value="1234567890">1234567890 - DESODORANTE REXONA MUJER</option>
-                                    <option value="A48695006">A48695006 - SALUFIT </option>
-                                    <option value="B35859045">B35859045 - 1 LECHE SEMIDESCR-DESLACT</option>
-                                  </select>
-                                </div>
-                              <input type="submit" class="btn btn-primary btn-lg btn-block" id="submit-frm2" value="Enviar" disabled></button>
-                        </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         </div>
-      </main>
-      <!-- Inicia Codigo para Modals -->
-      <!-- Modal para los settings-->
-      <div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <form id="ajustes-frm" method="post">
-                     <div class="form-group">
-                        <label for="exampleInputEmail1">EndPoint</label>
-                        <input type="text" class="form-control" id="endpoint" name="endpoint" aria-describedby="emailHelp"  required>
-                     </div>
-               </div>
-               <div class="modal-footer">
-               <input type="submit" class="btn btn-primary" value="Guardar" ></button>
-               </form>
-               <button type="button" class="btn btn-secondary" id="limpiar-btn">Limpiar Ajustes</button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Fin Modal -->
-      <!-- Modal para Informacion-->
-      <div class="modal fade" id="modal-informacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Informacion</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p id="mensaje-modal"></p>
-            </div>
-            <div class="modal-footer">
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Modal -->
-      <!-- Fin Codigo para Modals -->
-      <!-- Debugger -->
-      <div id="output" class="output">
-        <pre id="logger"></pre>
-        <div id="output" class="output">
-          <div id="content">
-        <div><span id="warning"></span></div>
-        </div>
-          <div id="status"></div>
-          <pre id="log"></pre>
-        </div>
-    </div>
-      <!-- Fin Debugger -->
-      <footer class="container">
-         <p>&copy;Avaya 2018</p>
-      </footer>
-
-      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-      <script type="text/javascript" src="js/datastorage.js"></script>
-      <script type="text/javascript" src="js/intlTelInput.min.js"></script>
-      <script type="text/javascript" src="js/custom.js"></script>
-
-
-   </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/intlTelInput.min.css">
+		<!--[if IE]>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<![endif]-->
+		<link rel="icon" href="img/favicon.ico">
+		<title>Etiquetas</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Etiquetas</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+				</ul>
+				<button type="button" class="btn btn-secondary" id="ajustes-btn">Ajustes</button>
+			</div>
+		</nav>
+		<main role="main">
+			<div class="jumbotron text-center">
+				<div class="container">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/1.png" alt="Los Angeles">
+							</div>
+							<div class="carousel-item">
+								<img src="img/2.png" alt="Chicago">
+							</div>
+							<div class="carousel-item">
+								<img src="img/3.jpg" alt="New York">
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<div id="accordion">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Precio
+									</button>
+								</h5>
+							</div>
+							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<form id="precio-frm" method="post">
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">Email</span>
+											</div>
+											<input type="email" class="form-control" id="email-txt" name="email-txt" value="jlramirez@avaya.com" aria-label="Username" aria-describedby="basic-addon1" required>
+										</div>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">Telefono</span>
+											</div>
+											<input id="inputsms-txt" type="tel" class="form-control">
+											<span id="valid-msg" class="hide">✓ Valido</span>
+											<span id="error-msg" class="hide"></span>
+										</div>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<label class="input-group-text" for="inputGroupSelect01">Producto</label>
+											</div>
+											<select class="custom-select" id="product-txt" name="product-txt" required>
+												<option value="1234567890">1234567890 - DESODORANTE REXONA MUJER</option>
+												<option value="A48695006">A48695006 - SALUFIT </option>
+												<option value="B35859045">B35859045 - 1 LECHE SEMIDESCR-DESLACT</option>
+											</select>
+										</div>
+										<input type="submit" class="btn btn-primary btn-lg btn-block" id="submit-frm1" value="Enviar" disabled></button>
+								</div>
+								</form>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Descripcion
+									</button>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<form id="descr-frm" method="post">
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">Telefono</span>
+											</div>
+											<input id="inputsms2-txt" type="tel" class="form-control">
+											<span id="valid-msg2" class="hide">✓ Valido</span>
+											<span id="error-msg2" class="hide"></span>
+										</div>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<label class="input-group-text" for="inputGroupSelect01">Producto</label>
+											</div>
+											<select class="custom-select" id="product-txt" name="product-txt" required>
+												<option value="1234567890">1234567890 - DESODORANTE REXONA MUJER</option>
+												<option value="A48695006">A48695006 - SALUFIT </option>
+												<option value="B35859045">B35859045 - 1 LECHE SEMIDESCR-DESLACT</option>
+											</select>
+										</div>
+										<input type="submit" class="btn btn-primary btn-lg btn-block" id="submit-frm2" value="Enviar" disabled></button>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</main>
+		<!-- Inicia Codigo para Modals -->
+		<!-- Modal para los settings-->
+		<div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form id="ajustes-frm" method="post">
+							<div class="form-group">
+								<label for="exampleInputEmail1">EndPoint</label>
+								<input type="text" class="form-control" id="endpoint" name="endpoint" aria-describedby="emailHelp"  required>
+							</div>
+					</div>
+					<div class="modal-footer">
+					<input type="submit" class="btn btn-primary" value="Guardar" ></button>
+					</form>
+					<button type="button" class="btn btn-secondary" id="limpiar-btn">Limpiar Ajustes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Modal para Informacion-->
+		<div class="modal fade" id="modal-informacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Informacion</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p id="mensaje-modal"></p>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Fin Codigo para Modals -->
+		<!-- Debugger -->
+		<div id="output" class="output">
+			<pre id="logger"></pre>
+			<div id="output" class="output">
+				<div id="content">
+					<div><span id="warning"></span></div>
+				</div>
+				<div id="status"></div>
+				<pre id="log"></pre>
+			</div>
+		</div>
+		<!-- Fin Debugger -->
+		<footer class="container">
+			<p>&copy;Avaya 2018</p>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/datastorage.js"></script>
+		<script type="text/javascript" src="js/intlTelInput.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
 </html>
