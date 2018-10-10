@@ -76,11 +76,12 @@ $(document).ready(function() {
   btype = "AAAMIAETIQUETASPRECIO"
   event.preventDefault();
   var preciofrm = $("#precio-frm").serializeArray();
+    console.log(preciofrm);
   var emailval = preciofrm["0"].value;
   var smsval = preciofrm["1"].value;
   var prodval = preciofrm["2"].value;
   var obj = "{\"email\":\""+ emailval +"\",\"sms\":\""+ smsval +"\",\"codigoProducto\":\""+prodval+"\"}";
-  console.log(obj);
+
 
   postbreeze(family, btype, version, endpoint, obj)
 });
@@ -95,6 +96,62 @@ $("#descr-frm").submit(function() {
  console.log(obj);
  postbreeze(family, btype1, version, endpoint, obj1)
 });
+
+//Validacion E164
+var input = document.querySelector("#inputsms-txt"),
+  errorMsg = document.querySelector("#error-msg"),
+  validMsg = document.querySelector("#valid-msg");
+
+// here, the index maps to the error code returned from getValidationError - see readme
+var errorMap = [ "Número no válido", "Código de País Incorrecto", "Muy Corto", "Muy largo", "Número Inválido"];
+
+// initialise plugin
+var iti = window.intlTelInput(input, {
+  initialCountry: "auto",
+   geoIpLookup: function(callback) {
+     $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+       var countryCode = (resp && resp.country) ? resp.country : "";
+       callback(countryCode);
+     });
+   },
+  nationalMode: true,
+  utilsScript: "js/utils.js"
+});
+
+var reset = function() {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+
+// on blur: validate
+input.addEventListener('blur', function() {
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+      console.log(iti.getNumber());
+      $("input#intnumber-txt").val(iti.getNumber());
+      $("#submit-frm1").removeAttr('disabled');
+    } else {
+      input.classList.add("error");
+      var errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+      $("input#intnumber-txt").val('');
+      $("#elementID").prop("disabled", true);
+
+    }
+  }
+});
+
+// on keyup / change flag: reset
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+
+//FIN Validacion
+
 
   //Fin Listeners
 });
