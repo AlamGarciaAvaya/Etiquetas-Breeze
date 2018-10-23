@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	//Variables globales
 	//Valores por defecto
-	var endpoint = "https://breezex7-213.collaboratory.avaya.com/services/EventingConnector/events";
+	var endpoint = "https://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events";
 	var family = "AAAMIAETIQUETAS";
 	var version = "1.0";
 	//Fin de Variables globales
@@ -15,8 +15,8 @@ $(document).ready(function () {
 	//Fin LocalStorage
 	//Comprobación de Valores guardados
 	if (endpoint == null) {
-		$('input#endpoint').val("https://breezex7-213.collaboratory.avaya.com/services/EventingConnector/events");
-		localData.set('endpoint_v', "hhttps://breezex7-213.collaboratory.avaya.com/services/EventingConnector/events");
+		$('input#endpoint').val("https://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events");
+		localData.set('endpoint_v', "hhttps://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events");
 	} else {
 		$('input#endpoint').val(endpoint);
 	}
