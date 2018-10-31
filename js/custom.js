@@ -16,7 +16,7 @@ $(document).ready(function () {
 	//Comprobación de Valores guardados
 	if (endpoint == null) {
 		$('input#endpoint').val("https://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events");
-		localData.set('endpoint_v', "hhttps://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events");
+		localData.set('endpoint_v', "https://breeze2-213.collaboratory.avaya.com/services/EventingConnector/events");
 	} else {
 		$('input#endpoint').val(endpoint);
 	}
